@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "46d6f4dbac6841563974216a4476b01d",
+    "revision": "61e3efc13e7f55d019d84261e28e2d6f",
     "url": "/coctail-selector/index.html"
   },
   {
-    "revision": "a35588fcec8e48aea370",
+    "revision": "c56c4f7256a89f7bc3fa",
     "url": "/coctail-selector/static/css/main.d605c730.chunk.css"
   },
   {
-    "revision": "71c640c4293aa9610cb4",
-    "url": "/coctail-selector/static/js/2.4b737b54.chunk.js"
+    "revision": "c9b3a7e303d2826587f7",
+    "url": "/coctail-selector/static/js/2.5c03c0d4.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/coctail-selector/static/js/2.4b737b54.chunk.js.LICENSE.txt"
+    "url": "/coctail-selector/static/js/2.5c03c0d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a35588fcec8e48aea370",
-    "url": "/coctail-selector/static/js/main.88844a3f.chunk.js"
+    "revision": "c56c4f7256a89f7bc3fa",
+    "url": "/coctail-selector/static/js/main.b8f8f81d.chunk.js"
   },
   {
     "revision": "ffb4d417ccd463769da1",

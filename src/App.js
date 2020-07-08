@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Fade from '@material-ui/core/Fade';
 
 import Button from '@material-ui/core/Button';
 import Radio from '@material-ui/core/Radio';
@@ -38,14 +39,16 @@ const QuestionCard = ({
   options,
   index,
   onSubmit,
-  isLastQuestion
+  isLastQuestion,
 }) => {
 const [value, setValue] = React.useState('');
-
+const [isShown, setIsShown] = React.useState(false)
 const handleChange = (event) => {
   setValue(event.target.value);
 };
+setTimeout(() => setIsShown(true), 100)
 return (
+  <Fade in={isShown}>
     <Card variant="outlined">
       <CardContent>
         <Typography style={{marginBottom: 20}} variant="h5">{question}</Typography>
@@ -57,11 +60,12 @@ return (
             onSubmit(value);
             setValue('')
           }} fullWidth style={{marginTop: 20}} variant="outlined" color="primary">
-            { isLastQuestion ? 'Получить коктейль' : 'Давай дальше!' }
+            { isLastQuestion ? 'Получить коктейль!' : 'Давай дальше!' }
           </Button>
         </FormControl>
       </CardContent>
     </Card>
+  </Fade>
   )
 }
 
@@ -125,9 +129,9 @@ function App() {
         {
           status === STATUSES.result && <>
             <Typography align="center" variant="h5">Супер! Ваш коктейль:</Typography>
-            <img className={'imgWithUpDownAnimation'} alt="Коктейль" src={imageMapping[values.current[getOftenElement(values.current)]]} />
+            <img className="imgWithUpDownAnimation" alt="Коктейль" src={imageMapping[values.current[getOftenElement(values.current)]]} />
 
-            <Button onClick={handleReset} fullWidth variant="outlined" color="primary">
+            <Button size="large" onClick={handleReset} fullWidth variant="contained" color="secondary">
                 Давай сначала!
               </Button>
           </>
