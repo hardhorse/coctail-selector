@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89bd0786.chunk.css",
+    "main.js": "/static/js/main.e676ab5d.chunk.js",
+    "main.js.map": "/static/js/main.e676ab5d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6bdeef08.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6bdeef08.js.map",
+    "static/js/2.4b737b54.chunk.js": "/static/js/2.4b737b54.chunk.js",
+    "static/js/2.4b737b54.chunk.js.map": "/static/js/2.4b737b54.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ce01afe4acbded9b34b81d2174a08422.js": "/precache-manifest.ce01afe4acbded9b34b81d2174a08422.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.89bd0786.chunk.css.map": "/static/css/main.89bd0786.chunk.css.map",
+    "static/js/2.4b737b54.chunk.js.LICENSE.txt": "/static/js/2.4b737b54.chunk.js.LICENSE.txt",
+    "static/media/california.png": "/static/media/california.1c987a6b.png",
+    "static/media/chisty-kaif.png": "/static/media/chisty-kaif.1e219793.png",
+    "static/media/hodim-po-kray.png": "/static/media/hodim-po-kray.d4e5d707.png",
+    "static/media/lubov.png": "/static/media/lubov.5144b8b5.png",
+    "static/media/main.png": "/static/media/main.428f2138.png",
+    "static/media/moya-vselennaya.png": "/static/media/moya-vselennaya.4f1e0c69.png",
+    "static/media/solnca-ne-vidno.png": "/static/media/solnca-ne-vidno.1784b130.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6bdeef08.js",
+    "static/js/2.4b737b54.chunk.js",
+    "static/css/main.89bd0786.chunk.css",
+    "static/js/main.e676ab5d.chunk.js"
+  ]
+}
