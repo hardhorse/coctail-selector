@@ -69,7 +69,7 @@ export const questions = [
         ]
     },
     {
-        question: "Какую песни вы бы хотели, чтобы DJ поставил именно для вас?",
+        question: "Какую песню вы бы хотели, чтобы DJ поставил именно для вас?",
         options: [
             {
                 key: COCTAILS.hodimPoKrau,

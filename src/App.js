@@ -108,7 +108,7 @@ function App() {
   return (
     <div >
       <CssBaseline />
-      <Container style={{paddingTop: 20}} maxWidth="lg">
+      <Container style={{paddingTop: 20}} maxWidth="md">
         {
           status === STATUSES.question &&
             <QuestionCard isLastQuestion={isLastQuestion} index={currentQuestion} onSubmit={handleNextSlide} {...questions[currentQuestion]}/>
@@ -117,7 +117,7 @@ function App() {
           status === STATUSES.init &&
             <>
               <img className="imgWithBounceAnimation" style={{width: '100%'}} src={MainImg} alt="main-img"/>
-              <Button onClick={() => setStatus(STATUSES.question)} fullWidth style={{marginTop: 20}} variant="outlined" color="primary">
+              <Button size="large" onClick={() => setStatus(STATUSES.question)} fullWidth style={{marginTop: 20}} variant="contained" color="secondary">
                 Я хочу коктейль!
               </Button>
             </>
