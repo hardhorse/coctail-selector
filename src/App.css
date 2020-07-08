@@ -1,10 +1,16 @@
 .imgWithBounceAnimation {
   width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
   animation: bounce .7s infinite alternate;
 }
 
 .imgWithUpDownAnimation {
   width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
   animation: upDown .7s infinite alternate;
 }
 

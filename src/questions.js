@@ -40,7 +40,7 @@ export const questions = [
     },
 
     {
-        question: "Ваше идеальное времяприпррвождение?",
+        question: "Ваше идеальное времяпрепровождение?",
         options: [
             {
                 key: COCTAILS.chistyKaif,
