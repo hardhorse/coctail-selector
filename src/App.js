@@ -142,6 +142,9 @@ function App() {
 
   return (
     <div >
+      <div className={'hiddenImages'}>
+        {Object.values(imageMapping).map(image => <img key={image} src={image} alt={image} />)}
+      </div>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Container maxWidth="md">

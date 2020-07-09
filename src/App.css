@@ -22,10 +22,15 @@ body {
   text-align: center;
 }
 
+.hiddenImages {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .imgWithBounceAnimation {
   width: 100%;
   max-width: 800px;
-  min-height: 379px;
   display: block;
   margin: 0 auto;
   animation: bounce .7s infinite alternate;
@@ -34,7 +39,6 @@ body {
 .imgWithUpDownAnimation {
   width: 100%;
   max-width: 800px;
-  min-height: 379px;
   display: block;
   margin: 0 auto;
   animation: upDown .7s infinite alternate;
