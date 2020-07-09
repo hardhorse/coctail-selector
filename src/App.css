@@ -1,6 +1,31 @@
+html, body, #root, #root > div {
+  height: 100%;
+}
+
+body {
+  font-family: 'Crimson Text', serif !important;
+}
+
+#root > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcomeScreen {
+  margin-top: -80px;
+  text-align: center;
+}
+
+
+.finalScreen {
+  text-align: center;
+}
+
 .imgWithBounceAnimation {
   width: 100%;
   max-width: 800px;
+  min-height: 379px;
   display: block;
   margin: 0 auto;
   animation: bounce .7s infinite alternate;
@@ -9,9 +34,11 @@
 .imgWithUpDownAnimation {
   width: 100%;
   max-width: 800px;
+  min-height: 379px;
   display: block;
   margin: 0 auto;
   animation: upDown .7s infinite alternate;
+  margin-top: -60px;
 }
 
 @keyframes bounce {

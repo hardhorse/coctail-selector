@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/coctail-selector/static/css/main.d605c730.chunk.css",
-    "main.js": "/coctail-selector/static/js/main.b8f8f81d.chunk.js",
-    "main.js.map": "/coctail-selector/static/js/main.b8f8f81d.chunk.js.map",
+    "main.css": "/coctail-selector/static/css/main.4e2e278c.chunk.css",
+    "main.js": "/coctail-selector/static/js/main.ffa738da.chunk.js",
+    "main.js.map": "/coctail-selector/static/js/main.ffa738da.chunk.js.map",
     "runtime-main.js": "/coctail-selector/static/js/runtime-main.dea9f1f0.js",
     "runtime-main.js.map": "/coctail-selector/static/js/runtime-main.dea9f1f0.js.map",
-    "static/js/2.5c03c0d4.chunk.js": "/coctail-selector/static/js/2.5c03c0d4.chunk.js",
-    "static/js/2.5c03c0d4.chunk.js.map": "/coctail-selector/static/js/2.5c03c0d4.chunk.js.map",
+    "static/js/2.bf095036.chunk.js": "/coctail-selector/static/js/2.bf095036.chunk.js",
+    "static/js/2.bf095036.chunk.js.map": "/coctail-selector/static/js/2.bf095036.chunk.js.map",
     "index.html": "/coctail-selector/index.html",
-    "precache-manifest.c64e0b372d00c9798fcba7e71a0f74e8.js": "/coctail-selector/precache-manifest.c64e0b372d00c9798fcba7e71a0f74e8.js",
+    "precache-manifest.45241592430653caab023e2104635f37.js": "/coctail-selector/precache-manifest.45241592430653caab023e2104635f37.js",
     "service-worker.js": "/coctail-selector/service-worker.js",
-    "static/css/main.d605c730.chunk.css.map": "/coctail-selector/static/css/main.d605c730.chunk.css.map",
-    "static/js/2.5c03c0d4.chunk.js.LICENSE.txt": "/coctail-selector/static/js/2.5c03c0d4.chunk.js.LICENSE.txt",
+    "static/css/main.4e2e278c.chunk.css.map": "/coctail-selector/static/css/main.4e2e278c.chunk.css.map",
+    "static/js/2.bf095036.chunk.js.LICENSE.txt": "/coctail-selector/static/js/2.bf095036.chunk.js.LICENSE.txt",
     "static/media/california.png": "/coctail-selector/static/media/california.1c987a6b.png",
     "static/media/chisty-kaif.png": "/coctail-selector/static/media/chisty-kaif.1e219793.png",
     "static/media/hodim-po-kray.png": "/coctail-selector/static/media/hodim-po-kray.d4e5d707.png",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.dea9f1f0.js",
-    "static/js/2.5c03c0d4.chunk.js",
-    "static/css/main.d605c730.chunk.css",
-    "static/js/main.b8f8f81d.chunk.js"
+    "static/js/2.bf095036.chunk.js",
+    "static/css/main.4e2e278c.chunk.css",
+    "static/js/main.ffa738da.chunk.js"
   ]
 }

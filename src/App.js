@@ -6,6 +6,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Fade from '@material-ui/core/Fade';
 
+import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Radio from '@material-ui/core/Radio';
 import RadioGroup from '@material-ui/core/RadioGroup';
@@ -34,6 +35,18 @@ const imageMapping = {
   [COCTAILS.solncaNeVidno]: SolncaNeVidno,
 }
 
+
+const useStyles = makeStyles((theme) => ({
+  roundedButton: {
+    borderRadius: 30,
+    marginTop: 20,
+  },
+  controlLabel: {
+    fontSize: 18,
+    lineHeight: 1.2,
+  }
+}));
+
 const QuestionCard = ({
   question,
   options,
@@ -46,7 +59,8 @@ const [isShown, setIsShown] = React.useState(false)
 const handleChange = (event) => {
   setValue(event.target.value);
 };
-setTimeout(() => setIsShown(true), 100)
+setTimeout(() => setIsShown(true), 100);
+const styles = useStyles();
 return (
   <Fade in={isShown}>
     <Card variant="outlined">
@@ -54,7 +68,7 @@ return (
         <Typography style={{marginBottom: 20}} variant="h5">{question}</Typography>
         <FormControl component="fieldset" fullWidth>
           <RadioGroup name={`question${index}`} value={value} onChange={handleChange}>
-            {options.map((item, index) => <FormControlLabel style={{lineHeight: 1.2, marginBottom: 10}} key={index} value={item.key} control={<Radio />} label={item.label} />)}
+            {options.map((item, index) => <FormControlLabel style={{ marginBottom: 10 }} classes={{label: styles.controlLabel}} key={index} value={item.key} control={<Radio />} label={item.label} />)}
           </RadioGroup>
           <Button disabled={!value} onClick={() => {
             onSubmit(value);
@@ -86,6 +100,21 @@ const getOftenElement = arr => {
   return maxi
 }
 
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: "'Crimson Text', serif",
+    lineHeight: 1,
+  },
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        '@font-face': "'Crimson Text', serif",
+      },
+    },
+  },
+});
+
 function App() {
   const questionNumber = questions.length;
   const values = React.useRef([]);
@@ -109,34 +138,38 @@ function App() {
     setStatus(STATUSES.init);
   }
 
+  const classes = useStyles();
+
   return (
     <div >
-      <CssBaseline />
-      <Container style={{paddingTop: 20}} maxWidth="md">
-        {
-          status === STATUSES.question &&
-            <QuestionCard isLastQuestion={isLastQuestion} index={currentQuestion} onSubmit={handleNextSlide} {...questions[currentQuestion]}/>
-        }
-        {
-          status === STATUSES.init &&
-            <>
-              <img className="imgWithBounceAnimation" style={{width: '100%'}} src={MainImg} alt="main-img"/>
-              <Button size="large" onClick={() => setStatus(STATUSES.question)} fullWidth style={{marginTop: 20}} variant="contained" color="secondary">
-                Я хочу коктейль!
-              </Button>
-            </>
-        }
-        {
-          status === STATUSES.result && <>
-            <Typography align="center" variant="h5">Супер! Ваш коктейль:</Typography>
-            <img className="imgWithUpDownAnimation" alt="Коктейль" src={imageMapping[values.current[getOftenElement(values.current)]]} />
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Container maxWidth="md">
+          {
+            status === STATUSES.question &&
+              <QuestionCard isLastQuestion={isLastQuestion} index={currentQuestion} onSubmit={handleNextSlide} {...questions[currentQuestion]}/>
+          }
+          {
+            status === STATUSES.init &&
+              <div className="welcomeScreen">
+                <img className="imgWithBounceAnimation" style={{width: '100%'}} src={MainImg} alt="main-img"/>
+                <Button className={classes.roundedButton} size="large" onClick={() => setStatus(STATUSES.question)} variant="contained" color="secondary">
+                  Я хочу коктейль!
+                </Button>
+              </div>
+          }
+          {
+            status === STATUSES.result && <div className="finalScreen">
+              <Typography align="center" variant="h5">Ваш коктейль:</Typography>
+              <img className="imgWithUpDownAnimation" alt="Коктейль" src={imageMapping[values.current[getOftenElement(values.current)]]} />
 
-            <Button size="large" onClick={handleReset} fullWidth variant="contained" color="secondary">
-                Давай сначала!
-              </Button>
-          </>
-        }
-      </Container>
+              <Button size="large" onClick={handleReset} className={classes.roundedButton} variant="contained" color="secondary">
+                Хочу ещё один!
+                </Button>
+            </div>
+          }
+        </Container>
+      </ThemeProvider>
     </div>
   );
 }

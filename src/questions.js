@@ -10,11 +10,11 @@ export const COCTAILS = {
 
 export const questions = [
     {
-        question: "Какое описание больше всего подходит?",
+        question: "Какое описание вам больше всего подходит?",
         options: [
             {
                 key: COCTAILS.california,
-                label: "Я сладкий/ая, т.к. меня уронили в детстве в сироп"
+                label: "Я сладкий/ая, т.к. меня уронили в детстве в сироп."
             },
             {
                 key: COCTAILS.hodimPoKrau,
@@ -22,7 +22,7 @@ export const questions = [
             },
             {
                 key: COCTAILS.lubovBexPamyati,
-                label: "Когда красивым налево, а умным направо, мне хоть разорвись"
+                label: "Когда красивым налево, а умным направо, мне хоть разорвись."
             },
             {
                 key: COCTAILS.solncaNeVidno,
@@ -102,27 +102,27 @@ export const questions = [
         options: [
             {
                 key: COCTAILS.lubovBexPamyati,
-                label: "На афтепати в бассейне"
+                label: "На афтепати в бассейне."
             },
             {
                 key: COCTAILS.moyaVselennaya,
-                label: "За душевными разговорами"
+                label: "За душевными разговорами."
             },
             {
                 key: COCTAILS.hodimPoKrau,
-                label: "Танцуя всю ночь"
+                label: "Танцуя всю ночь."
             },
             {
                 key: COCTAILS.california,
-                label: "С тортиком и кофейком "
+                label: "С тортиком и кофейком."
             },
             {
                 key: COCTAILS.solncaNeVidno,
-                label: "Так, чтобы ничего не помнить на утро"
+                label: "Так, чтобы ничего не помнить на утро."
             },
             {
                 key: COCTAILS.chistyKaif,
-                label: "За рулем авто, слушая песни Меладзе по дороге домой"
+                label: "За рулем авто, слушая песни Меладзе по дороге домой."
             }
         ]
     },
@@ -131,27 +131,27 @@ export const questions = [
         options: [
             {
                 key: COCTAILS.lubovBexPamyati,
-                label: "Fashion"
+                label: "Fashion;"
             },
             {
                 key: COCTAILS.solncaNeVidno,
-                label: "Ремарк"
+                label: "Ремарк;"
             },
             {
                 key: COCTAILS.chistyKaif,
-                label: "Бабочки"
+                label: "Бабочки;"
             },
             {
                 key: COCTAILS.hodimPoKrau,
-                label: "Искусственный интеллект"
+                label: "Искусственный интеллект;"
             },
             {
                 key: COCTAILS.california,
-                label: "Задушевные беседы"
+                label: "Задушевные беседы;"
             },
             {
                 key: COCTAILS.moyaVselennaya,
-                label: "Искусство"
+                label: "Искусство."
             }
         ]
     }
